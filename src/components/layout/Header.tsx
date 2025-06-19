@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Bell, Search, User, Calendar, Flask, AlertTriangle } from 'lucide-react';
+import { Bell, Search, User, Calendar, FlaskConical, AlertTriangle } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,7 +18,7 @@ export const Header = () => {
           {/* Logo and Brand */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <Flask className="h-8 w-8 text-blue-600" />
+              <FlaskConical className="h-8 w-8 text-blue-600" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-gray-900">Roche Lab</span>
                 <span className="text-sm text-gray-500">Reserve Hub</span>
