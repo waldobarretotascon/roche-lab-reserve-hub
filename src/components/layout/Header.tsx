@@ -9,8 +9,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { useAuth } from '@/hooks/useAuth';
 
 export const Header = () => {
+  const { signOut } = useAuth();
+
   return (
     <header className="bg-white border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
@@ -69,7 +72,10 @@ export const Header = () => {
                   My Calendar
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="text-red-600">
+                <DropdownMenuItem 
+                  className="text-red-600" 
+                  onClick={signOut}
+                >
                   Logout
                 </DropdownMenuItem>
               </DropdownMenuContent>
