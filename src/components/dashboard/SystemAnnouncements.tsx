@@ -53,20 +53,20 @@ export const SystemAnnouncements = () => {
 
   return (
     <Card>
-      <CardHeader>
+      <CardHeader className="pb-4">
         <CardTitle className="text-lg font-semibold">System Announcements</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-3">
         {announcements.map((announcement) => (
-          <Alert key={announcement.id} variant={getVariant(announcement.type)}>
+          <Alert key={announcement.id} variant={getVariant(announcement.type)} className="border">
             {getIcon(announcement.type)}
             <AlertDescription>
               <div className="flex justify-between items-start">
                 <div>
-                  <strong>{announcement.title}</strong>
-                  <p className="mt-1">{announcement.message}</p>
+                  <strong className="text-sm">{announcement.title}</strong>
+                  <p className="mt-1 text-sm">{announcement.message}</p>
                 </div>
-                <span className="text-sm text-gray-500 ml-4 whitespace-nowrap">
+                <span className="text-xs text-gray-500 ml-4 whitespace-nowrap">
                   {announcement.timestamp}
                 </span>
               </div>
