@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
@@ -93,10 +92,8 @@ export const AuthPage = () => {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <FlaskConical className="h-8 w-8 text-blue-600" />
+            <img src="/roche-logo.png" alt="Roche Logo" className="mx-auto mb-6 w-32 h-auto" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Roche Lab</span>
-              <span className="text-sm text-gray-500">Reserve Hub</span>
             </div>
           </div>
           <CardTitle className="text-2xl">
@@ -188,16 +185,6 @@ export const AuthPage = () => {
               {loading ? 'Loading...' : (isLogin ? 'Sign In' : 'Create Account')}
             </Button>
           </form>
-          
-          <div className="mt-4 text-center">
-            <button
-              type="button"
-              onClick={() => setIsLogin(!isLogin)}
-              className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-            >
-              {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
-            </button>
-          </div>
         </CardContent>
       </Card>
     </div>
