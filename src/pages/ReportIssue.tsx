@@ -38,6 +38,14 @@ const ReportIssue = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      <div className="container mx-auto px-4 pt-4">
+        <button
+          onClick={() => { window.location.href = '/'; }}
+          className="inline-block bg-white border border-gray-300 rounded px-4 py-2 text-blue-600 font-semibold shadow hover:bg-blue-50 transition mb-4"
+        >
+          &larr; Home
+        </button>
+      </div>
       <div className="bg-[#eaf6ff] py-12 text-center border-b border-blue-200">
         <h1 className="text-4xl font-bold mb-2 text-black">Report an Issue</h1>
         <p className="text-lg text-gray-700">Notify us about any problems with equipment in the lab.</p>

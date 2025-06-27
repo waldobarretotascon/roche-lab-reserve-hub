@@ -64,6 +64,14 @@ const NewBooking = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      <div className="container mx-auto px-4 pt-4">
+        <button
+          onClick={() => { window.location.href = '/'; }}
+          className="inline-block bg-white border border-gray-300 rounded px-4 py-2 text-blue-600 font-semibold shadow hover:bg-blue-50 transition mb-4"
+        >
+          &larr; Home
+        </button>
+      </div>
       <div className="bg-gray-300 py-12 text-center">
         <h1 className="text-5xl font-bold text-white mb-2">Create a New Booking</h1>
         <p className="text-xl text-white">Reserve lab equipment quickly to ensure availability.</p>
