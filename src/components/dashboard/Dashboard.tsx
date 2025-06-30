@@ -23,13 +23,19 @@ export const Dashboard = () => {
             <img src="/manage-bookings.png" alt="Manage my bookings" className="w-full object-contain rounded mb-4" style={{ maxHeight: 180 }} />
             <h3 className="font-bold text-lg mb-2">Manage my bookings</h3>
             <p className="text-gray-600 text-center mb-4">View, edit or cancel your existing bookings with just a few clicks.</p>
-            <a href="#" className="text-blue-600 font-medium">My Bookings</a>
+            <Link to="/my-bookings" className="text-blue-600 font-medium">My Bookings</Link>
           </div>
           <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center">
             <img src="/report-issue.png" alt="Report an issue" className="w-full object-contain rounded mb-4" style={{ maxHeight: 180 }} />
             <h3 className="font-bold text-lg mb-2">Report an issue</h3>
             <p className="text-gray-600 text-center mb-4">Notify us about any problems with equipment in the lab.</p>
             <Link to="/report-issue" className="text-blue-600 font-medium">Report Issue</Link>
+          </div>
+          <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <img src="/Analytics.png" alt="Analytics" className="w-full object-contain rounded mb-4" style={{ maxHeight: 180 }} />
+            <h3 className="font-bold text-lg mb-2">Analytics</h3>
+            <p className="text-gray-600 text-center mb-4">View equipment usage trends and lab analytics.</p>
+            <Link to="/analytics" className="text-blue-600 font-medium">Go to Analytics</Link>
           </div>
         </div>
       </section>
