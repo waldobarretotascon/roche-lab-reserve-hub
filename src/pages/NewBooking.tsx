@@ -72,9 +72,9 @@ const NewBooking = () => {
           &larr; Home
         </button>
       </div>
-      <div className="bg-gray-300 py-12 text-center">
-        <h1 className="text-5xl font-bold text-white mb-2">Create a New Booking</h1>
-        <p className="text-xl text-white">Reserve lab equipment quickly to ensure availability.</p>
+      <div className="bg-[#eaf2fb] py-12 text-center">
+        <h1 className="text-5xl font-bold text-black mb-2">Create a New Booking</h1>
+        <p className="text-xl text-gray-700">Reserve lab equipment quickly to ensure availability.</p>
       </div>
       <form onSubmit={handleSubmit} className="max-w-5xl mx-auto mt-8 p-8 bg-white rounded shadow flex flex-col space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -123,7 +123,7 @@ const NewBooking = () => {
             <textarea className="w-full border rounded px-3 py-2" value={note} onChange={e => setNote(e.target.value)} placeholder="Optional note..." />
           </div>
         </div>
-        <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700">Submit Booking</button>
+        <button type="submit" className="bg-[#9ca3af] text-white px-6 py-3 rounded font-semibold hover:bg-[#868e96]">Submit Booking</button>
         {message && <div className="text-center text-lg font-semibold text-green-700 bg-green-100 border border-green-300 rounded p-4 mt-4">{message}</div>}
       </form>
     </div>

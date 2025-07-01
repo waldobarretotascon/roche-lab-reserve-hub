@@ -3,6 +3,7 @@ import { AnalyticsDashboard } from '@/components/dashboard/AnalyticsDashboard';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
 import { supabase } from '@/integrations/supabase/client';
 import { Link } from 'react-router-dom';
+import { Header } from '@/components/layout/Header';
 
 const Analytics = () => {
   const [role, setRole] = useState<string | null>(null);
@@ -34,6 +35,7 @@ const Analytics = () => {
   return (
     <ProtectedRoute>
       <div className="min-h-screen bg-gray-50">
+        <Header />
         <div className="container mx-auto px-4 pt-4">
           <button
             onClick={() => { window.location.href = '/'; }}

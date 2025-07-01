@@ -47,6 +47,12 @@ export const Header = () => {
               <Link to="/analytics" className="text-gray-700 hover:text-blue-600 font-medium">Analytics</Link>
             ) : null}
             <a href="#" className="bg-black text-white px-4 py-2 rounded font-medium">My Profile</a>
+            <button
+              onClick={signOut}
+              className="ml-2 bg-black text-white px-4 py-2 rounded font-medium hover:bg-gray-900 transition"
+            >
+              Logout
+            </button>
           </nav>
         </div>
       </div>
