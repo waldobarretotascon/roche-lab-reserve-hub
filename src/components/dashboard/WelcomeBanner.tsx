@@ -9,7 +9,12 @@ export const WelcomeBanner = () => {
     const fetchUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
-        setFullName(user.user_metadata?.full_name || 'User');
+        const { data, error } = await supabase
+          .from('profiles')
+          .select('full_name')
+          .eq('id', user.id)
+          .single();
+        setFullName(data?.full_name || 'User');
       }
     };
     fetchUser();
