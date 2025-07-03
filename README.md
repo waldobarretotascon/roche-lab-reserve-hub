@@ -1,73 +1,136 @@
-# Welcome to your Lovable project
+# Roche Lab Reserve Hub
 
-## Project info
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/KibetuMaureen/roche-lab-reserve-hub)
 
-**URL**: https://lovable.dev/projects/560583c2-3f07-4cab-8fc8-067bd2871b40
+A modern web application for managing laboratory equipment bookings, reporting issues, and viewing analytics, built for Roche labs. This project streamlines lab operations, improves equipment utilization, and provides actionable insights for lab managers and users.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Deployment](#deployment)
+- [License](#license)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/560583c2-3f07-4cab-8fc8-067bd2871b40) and start prompting.
+## Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+**Roche Lab Reserve Hub** is a full-featured platform for:
+- Booking lab equipment
+- Managing and tracking reservations
+- Reporting and tracking equipment issues
+- Viewing lab analytics and usage trends
 
-**Use your preferred IDE**
+The application is designed for both lab users and managers, with role-based access to advanced analytics and management features.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Features
 
-Follow these steps:
+- **User Authentication**: Secure sign-up, login, and session management (Supabase Auth)
+- **Equipment Booking**: Reserve lab equipment, view availability, and manage your bookings
+- **Issue Reporting**: Report problems with equipment, track issue status, and view instrument details
+- **Analytics Dashboard**: Visualize equipment usage, booking trends, and lab activity (for managers)
+- **System Announcements**: Stay updated with lab-wide notifications and maintenance alerts
+- **Responsive UI**: Modern, mobile-friendly interface using shadcn-ui and Tailwind CSS
+
+---
+
+## Demo
+
+> _Add screenshots of the dashboard, booking flow, and analytics here._
+
+---
+
+## Tech Stack
+
+- **Frontend**: React, TypeScript, Vite
+- **UI**: shadcn-ui, Tailwind CSS
+- **State/Data**: React Query, Supabase (for auth and database)
+- **Charts**: recharts
+- **PDF/CSV Export**: jsPDF, PapaParse
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm (v9+ recommended)
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# 1. Clone the repository
 git clone <YOUR_GIT_URL>
+cd roche-lab-reserve-hub
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Set up environment variables
+# (Configure your Supabase project and add credentials if needed)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at [http://localhost:5173](http://localhost:5173) by default.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Available Scripts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `npm run dev` — Start the development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview the production build
+- `npm run lint` — Lint the codebase
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+roche-lab-reserve-hub/
+├── public/                # Static assets (images, favicon, etc.)
+├── src/
+│   ├── components/        # Reusable UI and feature components
+│   ├── hooks/             # Custom React hooks
+│   ├── integrations/      # Supabase client and types
+│   ├── lib/               # Utility functions
+│   ├── pages/             # Route-based pages
+│   └── main.tsx           # App entry point
+├── supabase/              # Supabase config and migrations
+├── package.json           # Project metadata and scripts
+├── tailwind.config.ts     # Tailwind CSS config
+└── README.md              # Project documentation
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/560583c2-3f07-4cab-8fc8-067bd2871b40) and click on Share -> Publish.
+## Deployment
 
-## Can I connect a custom domain to my Lovable project?
+You can deploy this app to any static hosting provider after building:
 
-Yes, you can!
+```sh
+npm run build
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The output will be in the `dist/` folder. Deploy this folder to your preferred hosting (e.g., Vercel, Netlify, GitHub Pages).
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For custom domain setup and advanced deployment, see the [Vite documentation](https://vitejs.dev/guide/static-deploy.html).
+
+---
+
+## License
+
+This project was completed as a Capstone project for educational purposes.
+
+---
+
