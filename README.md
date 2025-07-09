@@ -44,7 +44,7 @@ The application is designed for both lab users and managers, with role-based acc
 
 ## Demo
 
-[![Watch the demo](public/demo-thumbnail.png)](public/Roche_1_demo.mp4)
+https://github.com/user-attachments/assets/242da25c-b5a7-40df-bc31-72cb3a0c9174
 
 ---
 
