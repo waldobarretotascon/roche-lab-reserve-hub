@@ -44,7 +44,7 @@ The application is designed for both lab users and managers, with role-based acc
 
 ## Demo
 
-> _Add screenshots of the dashboard, booking flow, and analytics here._
+[![Watch the demo](public/demo-thumbnail.png)](public/Roche_1_demo.mp4)
 
 ---
 
